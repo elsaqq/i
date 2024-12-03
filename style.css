@@ -208,3 +208,47 @@ footer .footer-bottom {
   padding: 1rem 0;
   font-size: 0.875rem;
 }
+
+
+/* Base styling for video containers */
+.video-container {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Standard aspect ratio for smaller video */
+.standard-size .video-wrapper {
+  padding-top: 56.25%; /* Aspect ratio 16:9 */
+}
+
+.standard-size video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Larger aspect ratio for bigger video */
+.larger-size .video-wrapper {
+  padding-top: 75%; /* Adjust aspect ratio for larger size */
+}
+
+.larger-size video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+}
