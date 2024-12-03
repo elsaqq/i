@@ -8,11 +8,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
   <div class="container-fluid overflow-hidden">
+    <!-- Sidebar Navigation -->
     <header id="header-nav" class="col-lg-2 position-fixed px-5 bg-white h-100">
       <div class="header-wrap d-flex flex-column justify-content-between h-100">
         <div class="navigation">
@@ -31,17 +33,18 @@
       </div>
     </header>
 
+    <!-- Main Content -->
     <main class="col-lg-10 offset-lg-2">
       <div class="container">
         <!-- Home Section -->
         <section id="home" class="py-5 bg-text" data-text="01">
           <div class="row align-items-center">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
               <div class="banner-image text-center">
                 <img src="images/banner-image.png" alt="banner" class="img-fluid">
               </div>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
               <div class="name-section">
                 <h1 class="display-3">Elsa Luis</h1>
                 <h2 class="text-muted">Developer</h2>
@@ -53,16 +56,16 @@
 
         <!-- About Section -->
         <section id="about" class="my-5 py-5 bg-text" data-text="02">
-          <h2 class="display-4">About Me</h2>
+          <h2 class="display-4" data-aos="fade-up">About Me</h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
               <h3>Education</h3>
               <ul class="list-unstyled">
                 <li><strong>Bachelor's in Computer Science</strong> (2020 - 2024)</li>
                 <li><strong>Master's in Artificial Intelligence</strong> (2024 - 2025)</li>
               </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
               <h3>Interests</h3>
               <p>Football, PyTorch, Deep Learning, Java, Mobile Development, Natural Language Processing, Matlab, Video Editing, Swimming.</p>
             </div>
@@ -71,9 +74,9 @@
 
         <!-- Experience Section -->
         <section id="experience" class="my-5 py-5 bg-text" data-text="03">
-          <h2 class="display-4">Experience</h2>
+          <h2 class="display-4" data-aos="fade-up">Experience</h2>
           <div class="row">
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-right">
               <h3>Professional Experience</h3>
               <ul class="list-unstyled">
                 <li>
@@ -82,7 +85,7 @@
                 </li>
               </ul>
             </div>
-            <div class="col-lg-6">
+            <div class="col-lg-6" data-aos="fade-left">
               <h3>Skills</h3>
               <ul class="list-unstyled">
                 <li><strong>Python:</strong> 80%</li>
@@ -98,6 +101,7 @@
     </main>
   </div>
 
+  <!-- Footer -->
   <footer class="text-center bg-dark text-white py-4">
     <div class="container">
       <h4>Contact Me</h4>
@@ -111,6 +115,13 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // Animation duration in milliseconds
+      once: true, // Animation occurs only once
+    });
+  </script>
 </body>
 
 </html>
